@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: { lexend: ["Lexend Deca", "sans-serif"] },
+                colors: {
+                darkblue: "#323F73",
+                grayblue:" #95AFBA" ,
+                reed:"#FF416C",
+                whiteblue:"#F5F8FA",
+                whitepink:"#FFD9CC",
+                orange:"#E95829",
+                blueciel:"#CCFFFC",
+                blue:"#23A9A1",
+                yellew:"#FFD888",
+
+            },
+                backgroundImage: {}
+            },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container w-[100%]">
+
+
+        <!-- Header -->
+        <header class=" pt-[32px] md:pt-[40px] lg:pt-[48px] bg-no-repeat bg-right"  style="background-image: url(./images/Background\ Gradient.png);">
+            <nav class="flex justify-between items-center py-[10px] md:py-[20px] mx-[20px] md:mx-[60px] lg:mx-[100px]">
+                <img src="./images/Performance.png" alt="">
+                <div class="navbar  hidden md:flex justify-between items-center space-x-[100px]">
+                    <ul class="flex justify-between items-center space-x-[60px]">
+                        <li><a href="" class="text-[12px] text-darkblue font-regular" >Product</a></li>
+                        <li><a href="" class="text-[12px] text-darkblue font-regular">Academy</a></li>
+                        <li><a href="" class="text-[12px] text-darkblue font-regular">Careers</a></li>
+                        <li><a href="" class="text-[12px] text-darkblue font-regular">Blog</a></li>
+                    </ul>
+                    <div class="login flex justify-between items-center space-x-[40px]">
+                        <a href="" class="text-[12px] text-darkblue font-regular">Signin</a>
+                        <a href="" class="bg-darkblue text-white px-[20px] py-[12px] rounded-[8px]">Signup</a>
+                    </div>
+                </div>
+                <div class="menu md:hidden space-y-[5px]">
+                    <div class="bg-darkblue rounded-[24px] w-[22px] h-[4px]"></div>
+                    <div class="bg-darkblue rounded-[24px] w-[22px] h-[4px]"></div>
+                    <div class="bg-darkblue rounded-[24px] w-[22px] h-[4px]"></div>
+                </div>
+            </nav>
+            <div class="hero md:flex md:justify-between md:items-center ml-[20px] md:ml-[60px] lg:ml-[100px] text-center md:text-start space-y-[40px] md:space-y-0">
+                <div class="imgs flex justify-between items-center md:hidden overflow-hidden">
+                    <img src="./images/Graphics 12.png" alt="" class="max-w-none">
+                    <img src="./images/Graphics 11.png" alt="" class="max-w-none">
+                </div>
+                <div class="text space-y-[24px] md:space-y-[30px]">
+                    <h1 class="text-darkblue font-bold text-[22px] md:text-[32px] lg:text-[44px] ">Your Next Performance Management Platform</h1>
+                    <p class="text-grayblue text-[13px] md:text-[18px] lg:text-[22px] ">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                    <div class="form block md:flex md:items-center h-[52px] md:h-[64px] mt-[10px] md:mt-[30px] space-y-[34px] md:space-y-0">
+                        <div class="inpur flex items-center space-x-[10px] bg-whiteblue md:rounded-l-[15px] pl-[32px] md:py-[24px] w-[285px] md:w-[320px] m-[auto] md:m-0">
+                            <img src="./images/mail Icon.png" alt="" class="">
+                            <input type="email" placeholder="Add your email address" class="h-[52px] md:h-[100%] bg-transparent text-[13px] text-black">
+                        </div>
+                        <a type="button" href="" class="bg-reed text-white text-[13px] px-[15px] h-[52px] md:h-[100%] w-[165px] flex justify-center items-center md:rounded-r-[15px] m-[auto] md:m-0">Get Started for free</a>
+                    </div>
+                </div>
+                <div class="overflow-hidden"><img src="./images/Hero Image.png" alt="" class="hidden md:block  w-[624px] max-w-none "></div>
+            </div>
+        </header>
+
+
+        <!-- Main -->
+        <main class="mt-[74px] md:mt-[24px] space-y-[80px] md:space-y-[170px] mx-[30px] md:mx-[60px] lg:mx-[100px] relative mb-[469px]">
+
+            <!-- Section1 -->
+            <section class="sec1 flex justify-between items-center overflow-x-auto md:overflow-x-none  space-x-[30px] md:space-x-[30px]" style=".sec1::-webkit-scrollbar{display: none;}">
+                <img src="./images/Logo.png" alt="" class="max-w-none h-[65px] md:h-[100px] md:w-[257px] border rounder-[9px] md:rounded-[15px] py-[10px] px-[45px]">
+                <img src="./images/Logo 02.png" alt="" class="max-w-none h-[65px] md:h-[100px] md:w-[257px] border rounder-[9px] md:rounded-[15px] py-[10px] px-[45px]">
+                <img src="./images/logo 3.png" alt="" class="max-w-none h-[65px] md:h-[100px] md:w-[257px] border rounder-[9px] md:rounded-[15px] py-[10px] px-[45px]">
+                <img src="./images/Logo 04.png" alt="" class="max-w-none h-[65px] md:h-[100px] md:w-[257px] border rounder-[9px] md:rounded-[15px] py-[10px] px-[45px]">
+            </section>
+
+
+            <!-- Section2 -->
+            <section class="sec2 bg-no-repeat bg-left-top " style="background-image: url(./images/Product\ Graphics.png);">
+                <div class="containre  md:ml-[150px] text-center md:text-start space-y-[42px] md:space-y-[80px]">
+                    <div class="heading space-y-[17px] md:space-y-[20px]">
+                        <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[30px] ">Meet Our Products</h2>
+                        <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] md:w-[364px]">Our Products work Togather seamlessly to form talent science. start with one or more.</p>
+                    </div>
+
+                    <div class="space-y-[96px] md:space-y-[160px]">
+                        <div class="block md:flex justify-between items-center md:space-x-[90px] ">
+                            <div class="overflow-hidden  hidden md:block">
+                                <img src="./images/Goal Management.png" alt="" class=" relative right-[55px]">
+                            </div>
+                            <div class="space-y-[12px] md:space-y-[25px]">
+                                <div class="flex justify-between items-center w-[77px] h-[28px] bg-whitepink rounded-[4px] px-[10px] m-auto md:m-0">
+                                    <img src="./images/align.png" alt="">
+                                    <p class="text-orange text-[12px]">Align</p>
+                                </div>
+                                <div class="space-y-[11px]">
+                                    <h3 class="text-darkblue font-medium text-[18px] md:text-[22px] lg:text-[24px] ">Goal Management</h3>
+                                    <div class="w-[92px] h-[2px] bg-yellew m-auto md:m-0"></div>
+                                </div>
+                                <p class="md:w-[357px] text-start text-grayblue text-[13px] md:text-[14px] lg:text-[16px] ">Our Products work Together seamlessly to form talent science. start with one or more. </p>
+                                <div class="flex items-center justify-center md:justify-start space-x-[8px] pb-[30px] md:pb-[40px]">
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Daily Track</p>
+                                    </div>
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Road Map</p>
+                                    </div>
+                                </div>
+                                <a href="" class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px] bg-yellew px-[16px] py-[18px] md:px-[24px] md:py-[21px] rounded-[4px] ">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="block md:flex justify-between items-center md:space-x-[90px] ">
+                            <div class="space-y-[12px] md:space-y-[25px]">
+                                <div class="flex justify-between items-center w-[77px] h-[28px] bg-blueciel rounded-[4px] px-[10px] m-auto md:m-0">
+                                    <img src="./images/icons.png" alt="">
+                                    <p class="text-blue text-[12px]">Remote</p>
+                                </div>
+                                <div class="space-y-[11px]">
+                                    <h3 class="text-darkblue font-medium text-[18px] md:text-[22px] lg:text-[24px] ">Remote Tool</h3>
+                                    <div class="w-[92px] h-[2px] bg-yellew m-auto md:m-0"></div>
+                                </div>
+                                <p class="md:w-[357px] text-start text-grayblue text-[13px] md:text-[14px] lg:text-[16px] ">Our Products work Together seamlessly to form talent science. start with one or more. </p>
+                                <div class="flex items-center justify-center md:justify-start space-x-[8px] pb-[30px] md:pb-[40px]">
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Remote Acces</p>
+                                    </div>
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Work Anytime</p>
+                                    </div>
+                                </div>
+                                <a href="" class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px] bg-yellew px-[16px] py-[18px] md:px-[24px] md:py-[21px] rounded-[4px] ">Learn more</a>
+                            </div>
+                            <div class="overflow-hidden  hidden md:block">
+                                <img src="./images/Remote Tool Graphics.png" alt="" class=" relative right-[55px]">
+                            </div>
+                        </div>
+
+                        <div class="block md:flex justify-between items-center md:space-x-[90px] ">
+                            <div class="overflow-hidden  hidden md:block">
+                                <img src="./images/Graphics 04.png" alt="" class=" relative right-[55px]">
+                            </div>
+                            <div class="space-y-[12px] md:space-y-[25px]">
+                                <div class="flex justify-between items-center w-[77px] h-[28px] bg-whitepink rounded-[4px] px-[10px] m-auto md:m-0">
+                                    <img src="./images/search.png" alt="">
+                                    <p class="text-orange text-[12px]">Review</p>
+                                </div>
+                                <div class="space-y-[11px]">
+                                    <h3 class="text-darkblue font-medium text-[18px] md:text-[22px] lg:text-[24px] ">Review</h3>
+                                    <div class="w-[92px] h-[2px] bg-yellew m-auto md:m-0"></div>
+                                </div>
+                                <p class="md:w-[357px] text-start text-grayblue text-[13px] md:text-[14px] lg:text-[16px] ">Our Products work Together seamlessly to form talent science. start with one or more. </p>
+                                <div class="flex items-center justify-center md:justify-start space-x-[8px] pb-[30px] md:pb-[40px]">
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Track Performanc</p>
+                                    </div>
+                                    <div class="flex justify-between items-center space-x-[8px]">
+                                        <div class="w-[8px] h-[8px] bg-yellew rounded-[4px]"></div>
+                                        <p class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Status Review</p>
+                                    </div>
+                                </div>
+                                <a href="" class="text-start text-darkblue text-[13px] md:text-[14px] lg:text-[16px] bg-yellew px-[16px] py-[18px] md:px-[24px] md:py-[21px] rounded-[4px] ">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section3 -->
+            <section class="sec3 hidden md:block">
+                <div class="container flex justify-between md:space-x-[18px] bg-[#EDEFF5] rounded-[20px] py-[60px] pl-[92px]">
+                    <div class="space-y-[30px]">
+                        <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px] ">People use our Software and counting.</h2>
+                        <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] md:w-[364px]">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                        <div class="numbres flex items-center space-x-[20px]">
+                            <div class="number bg-white w-[90px] h-[100px] flex justify-center items-center text-6xl text-darkblue font-bold rounded-[18px]">1</div>
+                            <div class="number bg-white w-[90px] h-[100px] flex justify-center items-center text-6xl text-darkblue font-bold rounded-[18px]">2</div>
+                            <div class="number bg-white w-[90px] h-[100px] flex justify-center items-center text-6xl text-darkblue font-bold rounded-[18px]">1</div>
+                            <div class="number bg-white w-[90px] h-[100px] flex justify-center items-center text-6xl text-darkblue font-bold rounded-[18px]">7</div>
+                        </div>
+                    </div>
+                    <div class=""><img src="./images/Graphics 05.png" alt=""></div>
+                </div>
+            </section>
+
+
+            <!-- Section4 -->
+            <section class="sec4 hidden md:block">
+                <div class="container flex justify-between items-center space-x-[59px]">
+                    <div class="sidebar space-y-[20px]">
+                        <div class="flex items-center space-x-[20px]">
+                            <img src="./images/Combined Shape.png" alt="">
+                            <p class="text-blue text-[13px] md:text-[14px] lg:text-[16px]">Products</p>
+                        </div>
+                        <div class="flex items-center space-x-[20px]">
+                            <img src="./images/Group 3.png" alt="">
+                            <p class="text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Subscription</p>
+                        </div>
+                        <div class="flex items-center space-x-[20px]">
+                            <img src="./images/Combined Shape1.png" alt="">
+                            <p class="text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Custome</p>
+                        </div>
+                        <div class="flex items-center space-x-[20px]">
+                            <img src="./images/Path.png" alt="">
+                            <p class="text-darkblue text-[13px] md:text-[14px] lg:text-[16px]">Data Plana</p>
+                        </div>
+                    </div>
+                    <div class="space-y-[44px]">
+                        <div class="space-y-[17px]">
+                            <h3 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px]">Frequently Asked Questions</h3>
+                            <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] md:w-[364px] text-center">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                        </div>
+                        <div class="space-y-[40px]">
+                            <div class="flex items-center space-x-[28px]">
+                                <div class="w-[2px] h-[91px] bg-yellew"></div>
+                                <div class="space-y-[16px]">
+                                    <h4 class="text-darkblue font-bold text-[13px] md:text-[14px] lg:text-[16px]">Customizable performance management platform</h4>
+                                    <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] w-[569px]">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-[28px]">
+                                <div class="w-[2px] h-[91px] bg-yellew"></div>
+                                <div class="space-y-[16px]">
+                                    <h4 class="text-darkblue font-bold text-[13px] md:text-[14px] lg:text-[16px]">Customizable performance management?</h4>
+                                    <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] w-[569px]">Fully Customizable performance management platform that suits not the other way around Fully Customizable</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-[28px]">
+                                <div class="w-[2px] h-[91px] bg-yellew"></div>
+                                <div class="space-y-[16px]">
+                                    <h4 class="text-darkblue font-bold text-[13px] md:text-[14px] lg:text-[16px]">Customizable performance management platform</h4>
+                                    <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px] w-[569px]">performance management platform that suits your culture. not the other way around Fully Customizable performance management </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden "><img src="./images/Graphics 07.png" alt="" class="max-w-none"></div>
+                </div>
+            </section>
+
+
+            <!-- Section5 -->
+            <section class="sec5 hidden md:block">
+                <div class="container bg-[#EDEFF5] rounded-[20px] pt-[69px] space-y-[16px]">
+                    <div class="mx-[100px] mb-[23px]">
+                        <div class="flex justify-between items-center w-[143px] h-[28px] bg-whitepink rounded-[4px] px-[10px] m-auto md:m-0">
+                            <img src="./images/Group 24.png" alt="">
+                            <p class="text-orange text-[12px]">What people say’s</p>
+                        </div>
+                        <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px] ">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</h2>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-white w-[542px] h-[279px] px-[120px]">
+                            <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[120px]">50%</h2>
+                            <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[30px]">Boost in Production</h2>
+                        </div>
+                        <div class="mr-[50px]"><img src="./images/Graphics 08.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section6 -->
+            <section class="sec6 hidden md:block">
+                <div class="container flex justify-between items-center space-x-[148px]">
+                    <div class="">
+                        <div class="text space-y-[24px] md:space-y-[30px]">
+                            <h2 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px] ">Download Performance Management book for free.</h2>
+                            <p class="text-grayblue text-[18px] ">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                            <div class="form block md:flex md:items-center h-[52px] md:h-[64px] mt-[10px] md:mt-[30px] space-y-[34px] md:space-y-0">
+                                <div class="inpur flex items-center space-x-[10px] bg-whiteblue md:rounded-l-[15px] pl-[32px] md:py-[24px] w-[285px] md:w-[320px] m-[auto] md:m-0">
+                                    <img src="./images/mail Icon.png" alt="" class="">
+                                    <input type="email" placeholder="Add your email address" class="h-[52px] md:h-[100%] bg-transparent text-[13px]">
+                                </div>
+                                <a type="button" href="" class="bg-reed text-white text-[13px] px-[15px] h-[52px] md:h-[100%] w-[165px] flex justify-center items-center md:rounded-r-[15px] m-[auto] md:m-0">Get Started for free</a>
+                            </div>
+                            <p class="text-grayblue text-[18px] ">Everyone gets something special. Sign up to be everyone. :P</p>
+                        </div>
+                    </div>
+                    <div class=""><img src="./images/Graphics 09.png" alt=""></div>
+                </div>
+            </section>
+
+
+            <!-- Section7 -->
+            <section class="sec7 bg-no-repeat bg-right hidden md:block" style="background-image: url(./images/Graphics\ 10.png);">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px] ">Blog and Podcast</h3>
+                        <p class="text-grayblue text-[18px] md:mx-[180px] lg:mx-[331px]">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                    </div>
+                    <div class="flex space-x-[37px]">
+                        <div class="">
+                            <img src="./images/Group 2231.png" alt="">
+                            <div class="bg-[#EDEFF5] px-[29px] py-[32px] w-[355px]">
+                                <h5 class="text-darkblue font-bold text-[13px] md:text-[14px] lg:text-[16px]">Customizable performance management platform</h5>
+                                <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px]">Fully Customizable performance management platform that suits</p>
+                            </div>
+                        </div>
+                        <div class="relative top-[112px]">
+                            <img src="./images/Group 2230.png" alt="">
+                            <div class="bg-[#EDEFF5] px-[29px] py-[32px] w-[355px]">
+                                <h5 class="text-darkblue font-bold text-[13px] md:text-[14px] lg:text-[16px]">Customizable performance management platform</h5>
+                                <p class="text-grayblue text-[13px] md:text-[14px] lg:text-[16px]">Fully Customizable performance management platform that suits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- Section8 -->
+            <section class="sec8 absolute top-[100%] left-[45%]">
+                <div class="container flex items-end space-x-[32px] p-[40px] w-[500px]">
+                    <div class="w-[456px]">
+                        <div class="w-[100%] flex items-center">
+                            <div class="h-[5px] w-[33.33%] bg-blue"></div>
+                            <div class="h-[5px] w-[33.33%] bg-yellew"></div>
+                            <div class="h-[5px] w-[33.33%] bg-orange"></div>
+                        </div>
+                        <div class="form bg-[#F9F9F9] space-y-[31px] p-[40px]">
+                            <div class="">
+                                <h3 class="text-darkblue font-bold text-[24px]">Get Started in Minute</h3>
+                                <p  class="text-grayblue text-[13px]">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                            </div>
+                            <form action="" class="space-y-[32px]">
+                                <div class="h-[64px] bg-white rounded-[4px] pl-[33px]"><input type="text" placeholder="Email Address" class="h-[52px] md:h-[100%] text-[13px] text-darkblue"></div>
+                                <div class="h-[179px] bg-white rounded-[11px] pl-[33px]"><input type="text" placeholder="Message" class="h-[52px] md:h-[100%] text-[13px] text-darkblue"> </div>
+                                <a href="" class="bg-reed rounded-[15px] text-white text-[13px] px-[26px] py-[25px] h-[64px]  w-[165px] flex justify-center items-center  m-[auto] md:m-0">Contact us</a>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="./images/Chat box.png" alt="">
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="hidden md:block">
+            <div class="container bg-[#EDEFF5] pt-[60px] ">
+                <div class="space-y-[40px] pl-[170px]">
+                    <div class="space-y-[40px]">
+                        <h3  class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px] ">Performance</h3>
+                        <p class="text-grayblue text-[16px] w-[247px]">Fully Customizable performance management platform that suits your culture. not the other way around</p>
+                    </div>
+                    <div class="flex items-center space-x-[60px]">
+                        <div class="">
+                            <h5 class="text-grayblue text-[16px] ">Enquiries</h5>
+                            <p class="text-darkblue text-[16px] ">ux.rudrisha@gmail.com</p>
+                        </div>
+                        <div class="">
+                            <h5 class="text-grayblue text-[16px] ">Contact No</h5>
+                            <p class="text-darkblue text-[16px] ">00000-000-00</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h3 class="text-darkblue font-bold text-[22px] md:text-[24px] lg:text-[32px]">Cheers!</h3>
+                    </div>
+                    <div class="flex items-center space-x-[346px]">
+                        <ul class="flex justify-between items-center space-x-[60px]">
+                            <li class=""><a href="" class="text-[16px] text-darkblue font-regular">Product Tour</a></li>
+                            <li class=""><a href="" class="text-[16px] text-darkblue font-regular">Customer</a></li>
+                            <li class=""><a href="" class="text-[16px] text-darkblue font-regular">About us</a></li>
+                            <li class=""><a href="" class="text-[16px] text-darkblue font-regular">Help</a></li>
+                        </ul>
+                        <div class="flex items-center space-x-[30px]">
+                        <img src="./images/Twitter.png" alt="">
+                        <img src="./images/Facebook.png" alt="">
+                        <img src="./images/Linked in.png" alt="">
+                    </div>
+                    </div>
+                </div>
+                <div class="space-y-[20px]">
+                    <p class="text-[16px] text-darkblue font-regular pl-[170px]">© 2020 - Performance</p>
+                    <div class="w-[100%] flex items-center">
+                        <div class="h-[5px] w-[33.33%] bg-blue"></div>
+                        <div class="h-[5px] w-[33.33%] bg-yellew"></div>
+                        <div class="h-[5px] w-[33.33%] bg-orange"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html
